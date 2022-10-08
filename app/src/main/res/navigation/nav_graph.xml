@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/OnBoardingFragment">
+
+    <!-- OnBoardingFragment -->
+    <fragment android:id="@+id/OnBoardingFragment"
+              android:name="com.codingwithmitch.navigationcomponentsexample.OnBoardingFragment"
+              android:label="fragment_main"
+              tools:layout="@layout/fragment_onboarding">
+        <action android:id="@+id/action_OnBoardingFragment_to_SignUpFragment"
+                app:destination="@id/SignUpFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
+    </fragment>
+
+
+    <!-- SignInFragment -->
+    <fragment android:id="@+id/SignInFragment"
+              android:name="com.codingwithmitch.navigationcomponentsexample.SignInFragment"
+              android:label= "fragment_sign_in"
+              tools:layout="@layout/fragment_sign_in">
+
+        <action android:id="@+id/action_SignInFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <argument
+                android:name="username"/>
+        <argument
+                android:name="password" />
+        <argument
+                android:name="age" />
+        <argument
+                android:name="address" />
+    </fragment>
+
+
+    <!-- SignUpFragment -->
+    <fragment android:id="@+id/SignUpFragment"
+              android:name="com.codingwithmitch.navigationcomponentsexample.SignUpFragment"
+              android:label="fragment_sign_up"
+              tools:layout="@layout/fragment_sign_up">
+
+        <action android:id="@+id/action_SignUpFragment_to_SignInFragment"
+                app:destination="@id/SignInFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+
+
+    <!-- HomeFragment -->
+    <fragment android:id="@+id/HomeFragment"
+              android:name="com.codingwithmitch.navigationcomponentsexample.HomeFragment"
+              android:label="fragment_home"
+              tools:layout="@layout/fragment_home">
+<!--        <argument-->
+<!--                android:name="usernameLogin"-->
+<!--                app:argType="string" />-->
+<!--        <argument-->
+<!--                android:name="email"-->
+<!--                app:argType="string" />-->
+<!--        <argument-->
+<!--                android:name="address"-->
+<!--                app:argType="string" />-->
+    </fragment>
+
+
+</navigation>
