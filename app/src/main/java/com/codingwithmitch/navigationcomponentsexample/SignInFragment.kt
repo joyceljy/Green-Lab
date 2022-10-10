@@ -24,6 +24,8 @@ class SignInFragment : Fragment(), View.OnClickListener {
     lateinit var password: String
     lateinit var email: String
     lateinit var address: String
+    lateinit var gender: String
+    lateinit var phone: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,10 +33,14 @@ class SignInFragment : Fragment(), View.OnClickListener {
         password = arguments!!.getString("password") as String
         email = arguments!!.getString("email") as String
         address = arguments!!.getString("address") as String
+        gender = arguments!!.getString("gender") as String
+        phone = arguments!!.getString("phone") as String
         Log.d("myTag", "UserName= $username");
         Log.d("myTag", "Password= $password");
         Log.d("myTag", "Email= $email");
         Log.d("myTag", "Address= $address");
+        Log.d("myTag", "Phone= $phone");
+        Log.d("myTag", "Gender= $gender");
 
     }
 
@@ -58,7 +64,9 @@ class SignInFragment : Fragment(), View.OnClickListener {
         val bundle = bundleOf(
             "usernameLogin" to signInNameStr,
             "email" to email,
-            "address" to address
+            "address" to address,
+            "phone" to phone,
+            "gender" to gender
         )
         when(v!!.id){
 

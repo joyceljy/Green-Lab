@@ -15,8 +15,8 @@
             app:layout_constraintLeft_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/signup_btn2"
             android:inputType="text"
-            android:hint = "Enter User Name"
-            android:layout_marginBottom="472dp"/>
+            android:hint="Enter User Name"
+            android:layout_marginBottom="516dp" />
 
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="300dp"
@@ -27,8 +27,7 @@
             app:layout_constraintBottom_toTopOf="@+id/signup_btn2"
             android:inputType="text"
             android:hint="Enter Email"
-            android:layout_marginBottom="216dp"
-            app:layout_constraintHorizontal_bias="0.499" />
+            android:layout_marginBottom="336dp" />
 
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="300dp"
@@ -39,7 +38,7 @@
             app:layout_constraintBottom_toTopOf="@+id/signup_btn2"
             android:inputType="text"
             android:hint="Enter Password"
-            android:layout_marginBottom="348dp"
+            android:layout_marginBottom="424dp"
             app:layout_constraintHorizontal_bias="0.499" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -51,7 +50,30 @@
             app:layout_constraintBottom_toTopOf="@+id/signup_btn2"
             android:inputType="text"
             android:hint="Enter Address"
-            android:layout_marginBottom="80dp"
+            android:layout_marginBottom="144dp"
+            app:layout_constraintHorizontal_bias="0.499" />
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:id="@+id/gender_text"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/signup_btn2"
+            android:inputType="text"
+            android:hint="Enter Gender"
+            android:layout_marginBottom="240dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:id="@+id/phone_text"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/signup_btn2"
+            android:inputType="number"
+            android:hint="Enter Phone Number"
+            android:layout_marginBottom="44dp"
             app:layout_constraintHorizontal_bias="0.499" />
 
     <Button

@@ -46,12 +46,16 @@ class SignUpFragment : Fragment(), View.OnClickListener {
                 val passwordStr = password_up_text.text.toString()
                 val emailStr = email_text.text.toString()
                 val addressStr = address_text.text.toString()
+                val phoneStr = phone_text.text.toString()
+                val genderStr = gender_text.text.toString()
 
                 val bundle = bundleOf(
                     "username" to nameStr,
                     "password" to passwordStr,
                     "email" to emailStr,
-                    "address" to addressStr
+                    "address" to addressStr,
+                    "gender" to genderStr,
+                    "phone" to phoneStr
                 )
                 navController!!.navigate(R.id.action_SignUpFragment_to_SignInFragment,bundle)
             }
