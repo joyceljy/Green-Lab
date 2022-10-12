@@ -46,10 +46,6 @@ class HomeFragment : Fragment(), View.OnClickListener, LocationListener {
         gender = arguments!!.getString("gender") as String
         phone = arguments!!.getString("phone") as String
 
-//        val button= view?.findViewById<Button>(R.id.bt_location)
-//        button?.setOnClickListener {
-//            getLocation()
-//        }
     }
 
     private fun getLocation() {

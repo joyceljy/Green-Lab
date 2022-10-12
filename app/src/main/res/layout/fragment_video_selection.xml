@@ -13,25 +13,24 @@
             android:layout_width="wrap_content"
             app:layout_constraintRight_toLeftOf="parent"
             app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/linearlayout_videolist"
+            app:layout_constraintBottom_toTopOf="@+id/listview_videolist"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.414"
+            app:layout_constraintVertical_bias="0.0"
             android:text="Video List"
             android:textAlignment="center"
             android:textSize="40sp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintHorizontal_bias="0.671" />
+            app:layout_constraintHorizontal_bias="0.634" />
 
-    <LinearLayout
+    <ListView
+            android:id="@+id/listview_videolist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/linearlayout_videolist"
-            android:layout_marginTop="150dp">
-
-        <ListView
-                android:id="@+id/listview_videolist"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-    </LinearLayout>
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

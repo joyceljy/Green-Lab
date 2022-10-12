@@ -91,6 +91,14 @@
             android:name="com.codingwithmitch.navigationcomponentsexample.VideoSelectionFragment"
             android:label="fragment_video_selection"
             tools:layout="@layout/fragment_video_selection">
+
+        <action android:id="@+id/action_VideoSelectionFragment_to_VideoFragment"
+                app:destination="@id/VideoFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
     </fragment>
 
     <!-- VideoFragment -->
@@ -98,6 +106,13 @@
             android:name="com.codingwithmitch.navigationcomponentsexample.VideoFragment"
             android:label="fragment_video"
             tools:layout="@layout/fragment_video">
+        <action android:id="@+id/action_VideoFragment_to_VideoSelectionFragment"
+                app:destination="@id/VideoSelectionFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
     </fragment>
 
 
