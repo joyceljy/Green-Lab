@@ -95,9 +95,6 @@ class HomeFragment : Fragment(), View.OnClickListener, LocationListener {
     }
 
 
-
-
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //show passed data on page
